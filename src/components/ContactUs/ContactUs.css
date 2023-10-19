@@ -1,0 +1,102 @@
+.contact__us__card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 40px 80px;
+  background-color: rgba(228, 222, 222, 0.24);
+}
+
+.contact__us__card > :nth-child(1) {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact__us__inputs__card {
+  flex: 1;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact__us__inputs__card > div {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact__us__inputs__card > div > input {
+  width: 45%;
+  height: 40px;
+  padding: 0 13px;
+  outline: none;
+  border: none;
+}
+
+.contact__us__inputs__card > div > input:focus {
+  border-bottom: 1.9px solid orange;
+}
+#textarea {
+  padding: 10px 13px;
+
+  outline: none;
+  border: none;
+}
+#textarea:focus {
+  border: 2px solid orange;
+}
+.contact__us__inputs__card > button {
+  height: 37px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 160px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.contact__us__google__card {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+.contact__us__details {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact__address {
+  flex: 1;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  align-items: center;
+}
+.contact__address > :nth-child(1) {
+  width: 40px;
+  /* border: 1px solid red; */
+  font-size: 80px;
+  height: 30px;
+}
+.contact__address > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.contact__other__address {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact__map__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact__other__title {
+  border-bottom: 1px solid grey;
+}
+.contact__map__title ~ span {
+  color: grey;
+}

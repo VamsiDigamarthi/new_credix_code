@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  /* border: 1px solid yellow; */
+}
+
+.stroke-text {
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.svg {
+  position: absolute;
+  top: 610px;
+  right: 530px;
+  height: 100px;
+  z-index: -100;
+}
+
+.svg path {
+  height: 2000px;
+}
