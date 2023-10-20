@@ -14,7 +14,7 @@
   text-align: center;
 }
 .slider-inner-div {
-  width: 320px !important;
+  width: 80% !important;
   padding: 30px;
   /* border: 1px solid red; */
   display: flex;
@@ -25,6 +25,7 @@
   margin-bottom: 20px;
   margin-top: 10px;
   border-radius: 8px;
+  min-height: 340px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .slider-inner-div h3 {
@@ -41,4 +42,10 @@
   gap: 1rem;
   color: orange;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider-inner-div {
+    width: 100% !important;
+  }
 }

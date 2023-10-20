@@ -43,6 +43,7 @@ const Home = ({ homeLoan, colorCode }) => {
               )}
               <button
                 className="about-read-more-less"
+                id="read__more__style"
                 onClick={() => ReadMore(index)}
               >
                 {expandedItems.includes(index)

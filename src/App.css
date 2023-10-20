@@ -13,7 +13,8 @@
   flex-direction: column;
   gap: 1rem;
   position: relative;
-  /* border: 1px solid yellow; */
+  /* border: 2px solid red; */
+  margin-bottom: 0px;
 }
 
 .stroke-text {
@@ -37,4 +38,9 @@
 
 .svg path {
   height: 2000px;
+}
+
+#read__more__style {
+  color: rgb(224, 126, 126);
+  font-size: 14px;
 }

@@ -37,9 +37,22 @@ export const Footer = ({ colorCode }) => {
                 Personal Loan
               </Link>
             </span>
-            <span>Business Loan</span>
-            <span>Educational Loan</span>
-            <span>Card Loan</span>
+            <span>
+              <Link to="businee_loan" className="li__valuess">
+                Business Loan
+              </Link>
+            </span>
+            <span>
+              <Link to="educational_loan" className="li__valuess">
+                Educational Loan
+              </Link>
+            </span>
+            <span>
+              {" "}
+              <Link to="car_loan" className="li__valuess">
+                Card Loan
+              </Link>
+            </span>
           </div>
           <div>
             <h3
@@ -49,10 +62,26 @@ export const Footer = ({ colorCode }) => {
             >
               Other Services
             </h3>
-            <span>Balance Transfer</span>
-            <span>EMI Calculation</span>
-            <span>Compare Home Loan</span>
-            <span>Compare Business Loan</span>
+            <span>
+              <Link to="balance_transfer" className="li__valuess">
+                Balance Transfer
+              </Link>
+            </span>
+            <span>
+              <Link to="emi__calculator" className="li__valuess">
+                EMI Calculation
+              </Link>
+            </span>
+            <span>
+              <Link to="compare_home_loan" className="li__valuess">
+                Compare Home Loan
+              </Link>
+            </span>
+            <span>
+              <Link to="compare_business_loan" className="li__valuess">
+                Compare Business Loan
+              </Link>
+            </span>
             <span>Compare Interest Rate</span>
           </div>
 

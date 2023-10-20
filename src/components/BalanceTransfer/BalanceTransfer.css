@@ -1,0 +1,20 @@
+.balance__main__card {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  line-height: 2;
+}
+
+.p__value {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .balance__main__card {
+    padding: 20px 40px;
+  }
+}

@@ -1,0 +1,19 @@
+.car__loan__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 2;
+  padding: 40px 80px;
+}
+.car__loan__card > p {
+  color: grey;
+}
+.car__loan__card > strong {
+  color: rgb(189, 127, 127);
+}
+
+@media (max-width: 768px) {
+  .car__loan__card {
+    padding: 20px 40px;
+  }
+}

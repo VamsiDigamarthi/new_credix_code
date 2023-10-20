@@ -1,0 +1,61 @@
+.educational__loan__card {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education__card__width__image {
+  display: flex;
+  gap: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.education__card__width__image > div {
+  flex: 1.3;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.education__card__width__image > img {
+  flex: 1;
+  width: 40%;
+  border-radius: 10px;
+}
+.education__loan__list {
+  line-height: 2;
+}
+
+.education__loan__list > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .educational__loan__card {
+    padding: 20px 40px;
+  }
+  .education__card__width__image {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .education__card__width__image > img {
+    width: 100%;
+  }
+  .education__loan__list > div {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0rem;
+    padding: 0;
+  }
+  .education__loan__list > div > :nth-child(1) {
+    width: 15%;
+    margin-top: 7px;
+    font-size: 100%;
+  }
+}

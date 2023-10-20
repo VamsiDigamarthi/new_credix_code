@@ -86,6 +86,7 @@
 @media (max-width: 768px) {
   .testimonials-card {
     margin: 10px 50px;
+    margin-bottom: 250px;
   }
   .testimonials-card > div {
     flex-direction: column;

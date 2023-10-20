@@ -6,7 +6,7 @@ const color = [
     colorValue: "rgb(67, 187, 87)",
   },
   {
-    colorValue: "rgb(75, 77, 204)",
+    colorValue: "#4D91B6",
   },
   {
     colorValue: "orange",

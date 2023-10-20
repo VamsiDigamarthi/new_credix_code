@@ -1,0 +1,17 @@
+.compare__business__card {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 2;
+}
+
+.compare__business__card > p > span {
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .compare__business__card {
+    padding: 20px 40px;
+  }
+}

@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Hero = ({ colorCode }) => {
   const transition = { type: "spring", duration: 3 };
@@ -8,8 +9,8 @@ export const Hero = ({ colorCode }) => {
 
   let imageScr = "images/shape 2.png";
 
-  if (colorCode === "rgb(75, 77, 204)") {
-    imageScr = "images/shape blue.png";
+  if (colorCode === "#4D91B6") {
+    imageScr = "images/shape light.png";
   } else if (colorCode === "rgb(67, 187, 87)") {
     imageScr = "images/shape green.png";
   }
@@ -45,7 +46,15 @@ export const Hero = ({ colorCode }) => {
             borderBottom: `2px solid ${colorCode}`,
           }}
         >
-          <button style={{ color: colorCode }}>Read me</button>
+          <button style={{ color: colorCode }}>
+            <Link
+              to="about_us"
+              className="li__value"
+              style={{ color: colorCode }}
+            >
+              Read me
+            </Link>
+          </button>
           <AiOutlineArrowRight
             style={{
               color: colorCode,

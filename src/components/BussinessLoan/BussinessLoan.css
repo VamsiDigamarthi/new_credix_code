@@ -1,0 +1,152 @@
+.Business-about-maincontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+.Business-loanmain-divcon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 7px;
+}
+.About-Businessloan-container {
+  width: 45%;
+  color: grey;
+  height: 400px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+
+  padding: 12px;
+  border-radius: 9px;
+}
+.About-Businessloan-container span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.about-read-more-less {
+  border: none;
+  border-radius: 3px;
+  background-color: transparent;
+  outline-style: none;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+/* Business-benifits&Drawbacks */
+.Business-benifits-Drawbacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* width: 100%; */
+  padding: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  gap: 2rem;
+  border-radius: 9px;
+}
+/* note points logo */
+#logo--div {
+  display: flex;
+  gap: 0.5rem;
+}
+/* .Business-loanimg-container{
+    width: 300px;
+  } */
+.Business-benefit-container {
+  display: flex;
+  flex-direction: column;
+
+  /* width: 500px; */
+  flex: 1;
+  line-height: 30px;
+}
+/* Business-loan-criteria */
+.Business-loan-criteriacontainer span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Business-drawback-container */
+
+.Business-drawback-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  line-height: 30px;
+  flex: 1;
+}
+
+/* Business Total Container */
+
+.Business-total-divcontainer {
+  margin: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 2;
+}
+
+.Business__extra__mar {
+  margin-left: 30px;
+}
+
+.Business-total-divcontainer span {
+  color: grey;
+}
+
+.Business-benefit-container > span > :nth-child(1) {
+  margin-right: 10px;
+}
+
+.Business-loanimg-container {
+  width: 50%;
+}
+.Business-loanimg-container > img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .Business-total-divcontainer {
+    margin: 20px 40px;
+  }
+  .Business-about-maincontainer {
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+  }
+  .Business-loanmain-divcon {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .About-Businessloan-container {
+    width: 100%;
+  }
+  .Business-loanimg-container {
+    width: 100%;
+  }
+  .Business-loan-criteriacontainer span {
+    align-items: flex-start;
+  }
+  .Business-loan-criteriacontainer span > :nth-child(1) {
+    width: 60px;
+    margin-top: 6px;
+  }
+  .Business-loan-criteriacontainer span {
+    align-items: flex-start;
+
+    padding: 0;
+  }
+}

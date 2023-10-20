@@ -71,16 +71,45 @@ export const Services = ({ colorCode }) => {
             className="icons-slider-card"
           >
             <RiHomeOfficeLine size={25} />
-            <h3>Balance Transfer</h3>
+            <h3>Business Loan</h3>
           </div>
           <p>
-            Many people don’t know that banks don’t increase Home Loan EMIs but
-            they increase the tenure of the home loan when the floating interest
-            rate increases. If you are paying 11-12% interest rate on your home
-            loan then we can help you save a lot of money.
+            Financial Flow is the life blood of any successful organisation.
+            Most businesses will nedd a large amount of working capital
           </p>
         </div>
         <div className="slider-inner-div">
+          <div
+            style={{
+              color: colorCode,
+            }}
+            className="icons-slider-card"
+          >
+            <RiHomeOfficeLine size={25} />
+            <h3>Home Loan</h3>
+          </div>
+          <p>
+            A Home Loan is a secured loan product where the lender provides
+            finances for the purchase or construction of a
+            residential/commercial property
+          </p>
+        </div>
+        <div className="slider-inner-div">
+          <div
+            style={{
+              color: colorCode,
+            }}
+            className="icons-slider-card"
+          >
+            <RiHomeOfficeLine size={25} />
+            <h3>Personal Loan</h3>
+          </div>
+          <p>
+            A Personal loan is a loan your personal use, be it your child's
+            wedding, a dream vacation, or a shopping extravaganza
+          </p>
+        </div>
+        {/* <div className="slider-inner-div">
           <div
             style={{
               color: colorCode,
@@ -96,41 +125,7 @@ export const Services = ({ colorCode }) => {
             rate increases. If you are paying 11-12% interest rate on your home
             loan then we can help you save a lot of money.
           </p>
-        </div>
-        <div className="slider-inner-div">
-          <div
-            style={{
-              color: colorCode,
-            }}
-            className="icons-slider-card"
-          >
-            <RiHomeOfficeLine size={25} />
-            <h3>Balance Transfer</h3>
-          </div>
-          <p>
-            Many people don’t know that banks don’t increase Home Loan EMIs but
-            they increase the tenure of the home loan when the floating interest
-            rate increases. If you are paying 11-12% interest rate on your home
-            loan then we can help you save a lot of money.
-          </p>
-        </div>
-        <div className="slider-inner-div">
-          <div
-            style={{
-              color: colorCode,
-            }}
-            className="icons-slider-card"
-          >
-            <RiHomeOfficeLine size={25} />
-            <h3>Balance Transfer</h3>
-          </div>
-          <p>
-            Many people don’t know that banks don’t increase Home Loan EMIs but
-            they increase the tenure of the home loan when the floating interest
-            rate increases. If you are paying 11-12% interest rate on your home
-            loan then we can help you save a lot of money.
-          </p>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );

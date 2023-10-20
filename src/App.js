@@ -16,6 +16,13 @@ import Home from "./components/Home/Home";
 import { Color } from "./components/Color/Color";
 import { useState } from "react";
 import PersonLoan from "./components/PersonalLoan/PersonalLoan";
+import BussinessLoan from "./components/BussinessLoan/BussinessLoan";
+import Education from "./components/EducationLoan/EducationLoan";
+import { CarLoan } from "./components/CarLoan/CarLoan";
+import { BalanceTransfer } from "./components/BalanceTransfer/BalanceTransfer";
+import { EMICalculator } from "./components/EMICalculator/EMICalculator";
+import { CompareHomeLoan } from "./components/CompareHomeLoan/CompareHomeLoan";
+import { CompareBusinessLoan } from "./components/CompareBusinessLoan/CompareBusinessLoan";
 
 const homeLoan = [
   {
@@ -130,6 +137,29 @@ function App() {
             element={
               <PersonLoan personalLoan={personalLoan} colorCode={colorCode} />
             }
+          />
+          <Route
+            path="/businee_loan"
+            element={<BussinessLoan colorCode={colorCode} />}
+          />
+          <Route
+            path="/educational_loan"
+            element={<Education colorCode={colorCode} />}
+          />
+          <Route path="/car_loan" element={<CarLoan colorCode={colorCode} />} />
+          <Route
+            path="/balance_transfer"
+            element={<BalanceTransfer colorCode={colorCode} />}
+          />
+          <Route
+            path="/emi__calculator"
+            element={<EMICalculator colorCode={colorCode} />}
+          />
+          <Route path="/compare_home_loan" element={<CompareHomeLoan />} />
+
+          <Route
+            path="/compare_business_loan"
+            element={<CompareBusinessLoan />}
           />
         </Routes>
         <Footer colorCode={colorCode} />

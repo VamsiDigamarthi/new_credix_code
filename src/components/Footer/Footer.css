@@ -131,8 +131,15 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 20px 50px;
+    padding: 0px;
     flex-direction: column;
+    margin-bottom: 0;
+  }
+  .left__footer {
+    padding: 10px;
+  }
+  .right-side-footer {
+    padding: 20px 30px;
   }
   .right__footer {
     gap: 1rem;
@@ -142,7 +149,7 @@
   }
   .coin__footer__img {
     bottom: -50px;
-    right: -70px;
+    right: -50px;
   }
 }
 
