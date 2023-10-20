@@ -1,3 +1,8 @@
+import { TbTicketOff } from "react-icons/tb";
+
+import { GiBlackHandShield, GiJumpAcross } from "react-icons/gi";
+import { MdPeopleOutline } from "react-icons/md";
+
 export const Businessloan = [
   {
     id: "3",
@@ -19,5 +24,24 @@ export const Educationloan = [
       "Nothing can replace quality education when it comes to building a bright and successful future for your child and education is the only thing that can get a happy life going. However, due to the rising cost of higher education for students in India as well as abroad, parents are finding it more and more difficult to self-finance their children's education hence there is a huge demand for loans to cover education expenses. ",
     secondline:
       " Unlike most educational institutions today, educationalloans are given to meritorious and deserving students so that nothing hinders their progress and they achieve the best of education in India or abroad. At present, almost every Indian bank and NBFC offer education loans in India to students interested in pursuing a wide range of graduate, post graduate, professional and doctoral courses/degrees.",
+  },
+];
+
+export const OtherCards = [
+  {
+    icons: <TbTicketOff />,
+    title: "Loans worth over Rs. 3,200 crore disbursed",
+  },
+  {
+    icons: <MdPeopleOutline />,
+    title: "AP, Telangana & Karnataka Largest Financial distributor.",
+  },
+  {
+    icons: <GiBlackHandShield />,
+    title: " Partnered with top financial institutions of India.",
+  },
+  {
+    icons: <GiJumpAcross />,
+    title: "Best deals on Loans and Interest rates",
   },
 ];

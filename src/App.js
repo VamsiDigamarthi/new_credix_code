@@ -23,6 +23,8 @@ import { BalanceTransfer } from "./components/BalanceTransfer/BalanceTransfer";
 import { EMICalculator } from "./components/EMICalculator/EMICalculator";
 import { CompareHomeLoan } from "./components/CompareHomeLoan/CompareHomeLoan";
 import { CompareBusinessLoan } from "./components/CompareBusinessLoan/CompareBusinessLoan";
+import { OtherCard } from "./components/OtherCard/OtherCard";
+import { ServiceProviders } from "./components/ServiceProviders/ServiceProviders";
 
 const homeLoan = [
   {
@@ -95,7 +97,9 @@ function App() {
                 <Hero colorCode={colorCode} />
                 <Loans colorCode={colorCode} />
                 <Services colorCode={colorCode} />
+                <ServiceProviders />
                 <CallBack colorCode={colorCode} />
+                <OtherCard colorCode={colorCode} />
                 <Testimonials colorCode={colorCode} />
 
                 {/* <div className="svg">
