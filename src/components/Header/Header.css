@@ -13,6 +13,11 @@
     rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
     rgb(255, 85, 85) 0px 0px 0px 15px; */
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  background-color: #fff; */
 }
 
 .header img {

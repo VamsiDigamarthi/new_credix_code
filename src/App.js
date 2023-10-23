@@ -67,7 +67,11 @@ function App() {
           <Route
             path="/"
             element={
-              <>
+              <div
+                style={{
+                  marginTop: "60px",
+                }}
+              >
                 <Hero colorCode={colorCode} />
                 <Loans colorCode={colorCode} />
                 <Services colorCode={colorCode} />
@@ -93,7 +97,7 @@ function App() {
                     />
                   </svg>
                 </div> */}
-              </>
+              </div>
             }
           />
 
