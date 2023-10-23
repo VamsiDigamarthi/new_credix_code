@@ -35,10 +35,8 @@ export const EMICalculator = () => {
 
   let typoAmount = Number(loanAmount);
   let value = (typoAmount * finalInterest * firstPow) / secondPow;
-  console.log(value);
 
   let valueOfTour = newTenure * value;
-  console.log(valueOfTour);
 
   let totalInterestPay = valueOfTour - typoAmount;
 
@@ -74,7 +72,6 @@ export const EMICalculator = () => {
                 <span>{interest} %</span>
               </div>
               <div className="double__input__card">
-                {" "}
                 <input
                   type="range"
                   min="0"

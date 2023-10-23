@@ -35,3 +35,9 @@
   width: 150px;
   height: 60px;
 }
+
+@media (max-width: 768px) {
+  .service__provider__card {
+    display: none;
+  }
+}

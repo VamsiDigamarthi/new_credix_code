@@ -6,8 +6,9 @@ import {
   featureVariants,
   titleVariants,
 } from "../../data/animation";
+import { personalLoan } from "../../data/loanData";
 
-const PersonLoan = ({ personalLoan, colorCode }) => {
+const PersonLoan = () => {
   const [expandedItems, setExpandedItems] = useState([]);
 
   const ReadMore = (id) => {
