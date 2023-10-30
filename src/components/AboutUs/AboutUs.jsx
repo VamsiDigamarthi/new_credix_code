@@ -22,6 +22,7 @@ export const AboutUs = ({ colorCode }) => {
         src="https://t3.ftcdn.net/jpg/01/28/44/76/360_F_128447604_6deYSrg6bgH2F3YaoU0icdhvxNu4ReDN.jpg"
         alt=""
       />
+
       <div className="about__inner__card">
         <h1>About The CredEx</h1>
         <span>

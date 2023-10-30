@@ -1,44 +1,26 @@
 import { useState } from "react";
 import "./EMICalculator.css";
-// import { withStyles } from "@mui/material";
-// import Slider from "@material-ui/core/Slider";
-// import Typography from "@mui/material";
-
-// const PrettoSlider = withStyles({
-//   root: { color: "MediumVioletRed", heigt: 10 },
-//   thumb: {
-//     heigt: 25,
-//     width: 25,
-//     backgroundColor: "white",
-//     border: "3px solid black",
-//     marginTop: -9,
-//     marginLeft: -9,
-//   },
-//   track: { height: 10, borderRadius: 4 },
-//   rail: { height: 10, borderRadius: 4 },
-// })(Slider);
 
 export const EMICalculator = () => {
   const [loanAmount, setLoanAmount] = useState(500000);
   const [interest, setInterest] = useState(10);
   const [tenure, setTenure] = useState(3);
   // console.log(loanAmount);
-
-  let newTenure = Number(tenure) * 12;
+  const newTenure = Number(tenure) * 12;
   // interest
-  let typoInterest = Number(interest);
-  let finalInterest = typoInterest / 12 / 100;
+  const typoInterest = Number(interest);
+  const finalInterest = typoInterest / 12 / 100;
 
-  let firstPow = Math.pow(1 + finalInterest, newTenure);
-  let secondPow = Math.pow(1 + finalInterest, newTenure);
-  secondPow = secondPow - 1;
+  const firstPow = Math.pow(1 + finalInterest, newTenure);
+  const secondPow = Math.pow(1 + finalInterest, newTenure) - 1;
+  // secondPow = secondPow - 1;
 
-  let typoAmount = Number(loanAmount);
-  let value = (typoAmount * finalInterest * firstPow) / secondPow;
+  const typoAmount = Number(loanAmount);
+  const value = (typoAmount * finalInterest * firstPow) / secondPow;
 
-  let valueOfTour = newTenure * value;
+  const valueOfTour = newTenure * value;
 
-  let totalInterestPay = valueOfTour - typoAmount;
+  const totalInterestPay = valueOfTour - typoAmount;
 
   return (
     <div className="emi__cal__card">

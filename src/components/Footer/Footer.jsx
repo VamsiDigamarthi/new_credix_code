@@ -6,6 +6,10 @@ import { FiFacebook, FiTwitter } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 export const Footer = ({ colorCode }) => {
+  const style = {
+    color: colorCode,
+  };
+
   return (
     <div className="footer">
       <div className="left__footer">
@@ -20,13 +24,7 @@ export const Footer = ({ colorCode }) => {
         </div>
         <div className="right__footer">
           <div>
-            <h3
-              style={{
-                color: colorCode,
-              }}
-            >
-              Services
-            </h3>
+            <h3 style={style}>Services</h3>
             <span>
               <Link to="home_loan" className="li__valuess">
                 Home Loan
@@ -55,13 +53,7 @@ export const Footer = ({ colorCode }) => {
             </span>
           </div>
           <div>
-            <h3
-              style={{
-                color: colorCode,
-              }}
-            >
-              Other Services
-            </h3>
+            <h3 style={style}>Other Services</h3>
             <span>
               <Link to="balance_transfer" className="li__valuess">
                 Balance Transfer
@@ -86,13 +78,7 @@ export const Footer = ({ colorCode }) => {
           </div>
 
           <div>
-            <h3
-              style={{
-                color: colorCode,
-              }}
-            >
-              Address
-            </h3>
+            <h3 style={style}>Address</h3>
             <h5>Head Office:</h5>
             <span>
               # 7-1-621/259, 6th Floor,
@@ -142,6 +128,14 @@ export const Footer = ({ colorCode }) => {
           alt=""
         />
       </div>
+      {/* <iframe
+        src="https://rte-web-viewer.substance3d.com/model/https%3A%2F%2Fcdn.substance3d.com%2Fv2%2Ffiles%2Fsource%2F404e7a4f-64d4-40ab-a0df-294c0478a0cd%3Fencrypted%3Dtrue"
+        width="800"
+        height="560"
+        frameborder="0"
+        allow="fullscreen"
+        title="l"
+      ></iframe> */}
     </div>
   );
 };
