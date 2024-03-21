@@ -1,5 +1,5 @@
 .service__provider__card {
-  padding: 40px 80px;
+  /* padding: 40px 80px; */
   display: flex;
   flex-direction: column;
   gap: 2rem;

@@ -150,6 +150,7 @@
   .coin__footer__img {
     bottom: -50px;
     right: -50px;
+    display: none;
   }
 }
 

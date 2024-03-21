@@ -13,8 +13,8 @@ export const OtherCard = ({ colorCode }) => {
       variants={featureVariants}
       className="other__card"
     >
-      {OtherCards.map((item) => (
-        <div className="other__inner__card">
+      {OtherCards.map((item, key) => (
+        <div key={key} className="other__inner__card">
           <span style={style}>{item.icons}</span>
           <p>{item.title}</p>
         </div>

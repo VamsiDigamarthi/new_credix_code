@@ -18,10 +18,6 @@ export const AboutUs = ({ colorCode }) => {
         src="https://www.apifirst.in/wp-content/uploads/2021/05/about.png"
         alt=""
       /> */}
-      <img
-        src="https://t3.ftcdn.net/jpg/01/28/44/76/360_F_128447604_6deYSrg6bgH2F3YaoU0icdhvxNu4ReDN.jpg"
-        alt=""
-      />
 
       <div className="about__inner__card">
         <h1>About The CredEx</h1>
@@ -88,6 +84,10 @@ export const AboutUs = ({ colorCode }) => {
           Constantly in contact with you and the financial institution.
         </motion.div>
       </div>
+      <img
+        src="https://t3.ftcdn.net/jpg/01/28/44/76/360_F_128447604_6deYSrg6bgH2F3YaoU0icdhvxNu4ReDN.jpg"
+        alt=""
+      />
     </motion.div>
   );
 };

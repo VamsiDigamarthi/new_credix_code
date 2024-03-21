@@ -4,159 +4,80 @@ import { TbAlignRight } from "react-icons/tb";
 import { RxCross1 } from "react-icons/rx";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = ({ colorCode }) => {
-  const [navItemShow, setNavItemShow] = useState(true);
-  const [isHovering, setIsHovering] = useState(false);
-  const [isHoveringSecond, setIsHoveringSecond] = useState(false);
-  const [isHoveringThird, setIsHoveringThird] = useState(false);
-  const [isHoveringFouth, setIsHoveringFouth] = useState(false);
-  const [isHoveringFive, setIsHoveringFive] = useState(false);
+  const [openMobileUi, setOpenMobileUi] = useState(false);
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
+  const onOpenMobileUIElement = () => {
+    setOpenMobileUi(!openMobileUi);
   };
 
-  const handleMouseOut = () => {
-    setIsHovering(false);
+  // let mobileElement = openMobileUi && "mobile-elements";
+
+  let mobileElement = {
+    display: openMobileUi && "block",
+    position: openMobileUi && "absolute",
+    flexDirection: openMobileUi && "column",
+    top: openMobileUi && "100%",
+    padding: openMobileUi && "20px",
+    backgroundColor: openMobileUi && "rgb(235, 225, 214)",
+    width: openMobileUi && "100%",
+    zIndex: openMobileUi && "999",
   };
 
-  // second list
-
-  const handleMouseOverSecond = () => {
-    setIsHoveringSecond(true);
+  let mobileApplyMargin = {
+    marginBottom: openMobileUi && "10px",
+    fontSize: openMobileUi && "16px",
   };
-
-  const handleMouseOutSecond = () => {
-    setIsHoveringSecond(false);
-  };
-
-  // third
-
-  const handleMouseOverThird = () => {
-    setIsHoveringThird(true);
-  };
-
-  const handleMouseOutThird = () => {
-    setIsHoveringThird(false);
-  };
-  // Fourth
-  const handleMouseOverFouth = () => {
-    setIsHoveringFouth(true);
-  };
-
-  const handleMouseOutFouth = () => {
-    setIsHoveringFouth(false);
-  };
-  // Five
-
-  const handleMouseOverFive = () => {
-    setIsHoveringFive(true);
-  };
-
-  const handleMouseOutFive = () => {
-    setIsHoveringFive(false);
-  };
-
-  // --------------------------------------------------------------------
-  const onNavItemShow = () => {
-    setNavItemShow(!navItemShow);
-  };
-
-  //
-  //
-  //
-  const addClass = navItemShow ? "nav__hide" : "nav_add_back_color";
-  const addHeader = !navItemShow && "nav_header-add";
-  const transition = { type: "spring", duration: 3 };
-
-  //
-  //
 
   return (
-    <div className={`header ${addHeader}`}>
+    <div
+      style={{
+        background: openMobileUi && "rgb(235, 225, 214)",
+      }}
+      className="navbar-main"
+    >
       <img src="images/logz.png" alt="logo-img" />
-      <motion.nav
-        initial={{ left: "-10rem" }}
-        whileInView={{ left: navItemShow ? "0rem" : "0rem" }}
-        transition={transition}
-        className={`header__nav ${addClass} .nav__show__duration`}
-      >
-        <ul className="header__ul">
-          <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-            <Link
-              to="/"
-              className="li__value"
-              style={{
-                color: isHovering && colorCode,
-              }}
-            >
-              HOME
-            </Link>
-          </li>
-          <li
-            onMouseOver={handleMouseOverSecond}
-            onMouseOut={handleMouseOutSecond}
+      <ul>
+        <li>
+          <Link to="/" className="li__value">
+            HOME
+          </Link>
+        </li>
+        <li>
+          <Link to="about_us" className="li__value">
+            ABOUT US
+          </Link>
+        </li>
+        <li>PRODUCTS</li>
+        <li>CAREERS</li>
+        <li>
+          <Link to="add_partner" className="li__value">
+            BECOME A PARTNER
+          </Link>
+        </li>
+        <li>ENQUIRY NOW</li>
+        <li>BLOG</li>
+        <li>
+          {" "}
+          <Link
+            to="contact_us"
+            style={{ background: colorCode, color: "#fff" }}
+            className="li__value header-last-li"
           >
-            <Link
-              to="about_us"
-              className="li__value"
-              style={{
-                color: isHoveringSecond && colorCode,
-              }}
-            >
-              ABOUT US
-            </Link>
-          </li>
-          <li
-            onMouseOver={handleMouseOverThird}
-            onMouseOut={handleMouseOutThird}
-            style={{
-              color: isHoveringThird && colorCode,
-            }}
-          >
-            PRODUCTS
-          </li>
-          <li
-            onMouseOver={handleMouseOverFouth}
-            onMouseOut={handleMouseOutFouth}
-            style={{
-              color: isHoveringFouth && colorCode,
-            }}
-          >
-            CAREERS
-          </li>
-          <li onMouseOver={handleMouseOverFive} onMouseOut={handleMouseOutFive}>
-            <Link
-              to="add_partner"
-              className="li__value"
-              style={{
-                color: isHoveringFive && colorCode,
-              }}
-            >
-              BECOME A PARTNER
-            </Link>
-          </li>
-          <li>ENQUIRY NOW</li>
-          <li>BLOG</li>
-          <li>
-            {" "}
-            <Link
-              to="contact_us"
-              style={{ background: colorCode, color: "#fff" }}
-              className="li__value header-last-li"
-            >
-              CONTACT US
-            </Link>
-          </li>
-        </ul>
-      </motion.nav>
-      {/* mobile mode */}
-      {navItemShow ? (
-        <TbAlignRight onClick={onNavItemShow} className="header-icon" />
-      ) : (
-        <RxCross1 onClick={onNavItemShow} className="header-icon" />
-      )}
+            CONTACT US
+          </Link>
+        </li>
+      </ul>
+
+      <div className="nav-corss-card">
+        {openMobileUi ? (
+          <RxCross1 onClick={onOpenMobileUIElement} />
+        ) : (
+          <RxHamburgerMenu onClick={onOpenMobileUIElement} />
+        )}
+      </div>
     </div>
   );
 };

@@ -1,14 +1,21 @@
 import "./Partner.css";
 import { AiFillRightCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 export const Partner = ({ colorCode }) => {
+  const screenRef = useRef();
   const transition = { type: "spring", duration: 1 };
 
   const mobile = window.innerWidth <= 768 ? true : false;
   // const desk = mobile && "hidden";
   // const mobile_view = mobile ? "show" : "hidden";
+
+  useEffect(() => {
+    screenRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
-    <div className="partner__card">
+    <div ref={screenRef} className="partner__card">
       <div className="partner__left">
         <h1>Join as Credex Partner</h1>
         <span>
@@ -46,7 +53,7 @@ export const Partner = ({ colorCode }) => {
         </motion.span>
         <div className="left__partner__image__card">
           {/* <img src="images/partner_1.png" alt="" /> */}
-          <img src="images/partner_3.png" alt="" />
+          {/* <img src="images/partner_3.png" alt="" /> */}
         </div>
       </div>
       <div className="partner__right">

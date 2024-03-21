@@ -81,9 +81,7 @@ export const ContactUs = ({ colorCode }) => {
               width="100%"
               height="400"
               frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
+              // scrolling="no"
               title="Credex Loans"
               src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=%207-1-621/259,%206th%20Floor,%20Sahithi%20Arcade,%20Beside%20S.R.Nagar%20Traffic%20Police%20Station,%20Hyderabad-%20500038+(Credex%20Loans)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             >

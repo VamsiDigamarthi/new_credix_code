@@ -1,5 +1,5 @@
 .testimonials-card {
-  margin: 0px 80px;
+  /* margin: 0px 80px; */
   height: 320px;
   /* width: 100%; */
   /* border: 1px solid red; */
@@ -85,7 +85,7 @@
 
 @media (max-width: 768px) {
   .testimonials-card {
-    margin: 10px 50px;
+    /* margin: 10px 50px; */
     margin-bottom: 250px;
   }
   .testimonials-card > div {

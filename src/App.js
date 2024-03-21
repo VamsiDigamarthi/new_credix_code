@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header/Header";
-import { Hero } from "./components/Hero/Hero";
+import Hero from "./components/Hero/Hero";
 import { Loans } from "./components/Loans/Loans";
 import { Services } from "./components/Services/Services";
 import { Testimonials } from "./components/Testimonials/Testimonials";
@@ -25,6 +25,7 @@ import { CompareHomeLoan } from "./components/CompareHomeLoan/CompareHomeLoan";
 import { CompareBusinessLoan } from "./components/CompareBusinessLoan/CompareBusinessLoan";
 import { OtherCard } from "./components/OtherCard/OtherCard";
 import { ServiceProviders } from "./components/ServiceProviders/ServiceProviders";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [colorCode, setColorCode] = useState("orange");
@@ -56,12 +57,12 @@ function App() {
   //   console.log(scrollTop);
   // }, [scrollTop]);
 
-  console.log(colorCode);
+  // console.log(colorCode);
 
   return (
     <div className="App">
       <Router>
-        <Header colorCode={colorCode} />
+        <Navbar colorCode={colorCode} />
         <Color setColorCode={setColorCode} colorCode={colorCode} />
         <Routes>
           <Route
@@ -69,7 +70,11 @@ function App() {
             element={
               <div
                 style={{
-                  marginTop: "60px",
+                  marginTop: "80px",
+                  padding: "50px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "2rem",
                 }}
               >
                 <Hero colorCode={colorCode} />
@@ -79,24 +84,6 @@ function App() {
                 <CallBack colorCode={colorCode} />
                 <OtherCard colorCode={colorCode} />
                 <Testimonials colorCode={colorCode} />
-
-                {/* <div className="svg">
-                  <svg
-                    id="svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="658"
-                    height="1531"
-                    viewBox="0 0 658 1531"
-                    fill="none"
-                  >
-                    <path
-                      id="path"
-                      d="M657 1C462.003 32.2802 63.8151 130.452 31.0375 272.897V595.323C37.1074 639.436 45.6053 735.843 31.0375 768.567C17.3801 785.41 -7.20316 819.097 3.72273 819.097H31.0375M31.0375 819.097H87.9431M31.0375 819.097C55.3172 823.107 98.4138 837.384 76.562 862.408M103.877 903.313L78.8382 864.814C63.6634 881.657 28.306 912.937 8.27519 903.313L78.8382 973.091V1386.95C101.601 1455.13 184.91 1575.6 336.052 1512.07"
-                      stroke="#F08E34"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </div> */}
               </div>
             }
           />
